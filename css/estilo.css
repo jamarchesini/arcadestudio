@@ -1,149 +1,229 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-/* Header --------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 header {
-    height: 100vh;
-    position: center;
-    text-align: center;
-}
+  height: 400px;
+  position: center;
+  text-align: center; }
 
-    /* Menu --------------------------------- */
+.header__index {
+  height: 100vh;
+  position: center;
+  text-align: center; }
 
-        .menu {
-            font-weight: bold;
-            position: center;
-            text-align: center;
-            background-color: transparent !important;
-            position: relative;
-            z-index: 100;
-        }
+.menu {
+  font-weight: bold;
+  position: center;
+  text-align: center;
+  background-color: transparent !important;
+  position: relative;
+  z-index: 100;
+  padding-left: 150px; }
 
-        .nav-link {
-            color: white !important;
-        }
+.nav-link {
+  color: white !important; }
 
-        li a:hover {
-            color:black;
-            background: yellow;
-            cursor: pointer;
-        }
+li a:hover {
+  color: black !important;
+  background: yellow;
+  cursor: pointer; }
 
+.slider {
+  position: absolute;
+  top: 0; }
 
-    /* Fin Menu --------------------------------- */
-    /* Slider header --------------------------------- */
+.slider img {
+  height: 100vh;
+  width: auto; }
 
-        .slider{
-            position:absolute;
-            top: 0;
-        }
+@media (max-width: 768px) {
+  .slider img {
+    height: 100vh; } }
 
-        .slider img {
-            height: 100vh;
-            width: auto;
-        }
-
-        @media (max-width: 768px) {
-            .slider img {
-             height:100vh;
-            }
-        }
-
-        .slider h1 {
-            color: white;
-            text-align: center;
-            line-height: 100%;
-            text-transform: uppercase;
-        }
-
-    /* Fin Slider header --------------------------------- */
-/* Fin Header --------------------------------- */
-/* Main --------------------------------------- */
-
+.slider h1 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding-bottom: 380px; }
 
 main section {
-    background-color: whitesmoke;
-    padding-top: 10px;
-}
+  background-color: whitesmoke;
+  padding-top: 10px; }
 
-.frase{
-    font-weight: bold;
-    margin-bottom: 150px;
-    margin-top: 150px;
-    font-size: 2rem;
-    text-align: center; 
-}
+.frase {
+  font-weight: bold;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  font-size: 2rem;
+  text-align: center; }
 
 .titulo {
-    text-align: center;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 100px; }
 
 .titulo h2 {
-    color:black;
-    background: yellow;
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
-/* Proyectos --------------------------------------- */
+  color: black;
+  background: yellow;
+  text-transform: uppercase;
+  font-size: 2rem; }
 
 .descripcion {
-    display: none;
-    position: absolute;
-    top: 80%;
-    left: 5%;
-    color: white;
-}
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: white; }
 
 .descripcion1 {
-    display: none;
-    position: absolute;
-    top: 85%;
-    left: 5%;
-    color: white;
-}
+  display: none;
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  color: white; }
 
 .proyecto:hover .descripcion {
-    display:block;
-}
+  display: block; }
 
 .proyecto:hover .descripcion1 {
-    display:block;
-}
+  display: block; }
 
 .padding {
-    padding-left: 0;
-    padding-right: 0;
-}
+  padding-left: 0;
+  padding-right: 0; }
 
-/* boton --------------------------------------- */
+body {
+  font-family: 'Roboto Mono', monospace; }
+
+a {
+  color: white;
+  text-decoration: none; }
 
 .boton {
-    color: white;
-    background:black;
-    font-size: 2rem;
-    font-weight: 800;
-    text-align:center;
-    text-transform: uppercase;
-    margin-bottom: 100px;
-    position: relative;
-}
+  color: white;
+  background: black;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px; }
+  .boton .boton:hover {
+    color: black;
+    background: green;
+    cursor: pointer; }
 
-.boton:hover {
-    color:black;
-    background: white;
-    text-align:center;
-    cursor: pointer;
-}
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 100px 0 100px 0;
+  margin-top: 100px; }
+  .footer .footer__img {
+    padding: 50px; }
+  .footer .footer__a:hover {
+    text-decoration: underline;
+    color: yellow; }
 
-/* Fin Proyectos ---------------------------------------*/
+.body {
+  overflow-x: hidden; }
 
-/* Fin Main --------------------------------------- */
+.header__titulos {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+.header__proyectos {
+  top: 0;
+  background-image: url(../imagenes/proyectos/proyecto-header.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute; }
+
+.section {
+  background-color: transparent; }
+
+.proyectos__proyectos {
+  margin-top: -100px;
+  padding-bottom: 100px; }
+  .proyectos__proyectos img {
+    padding-bottom: 20px; }
+  .proyectos__proyectos img:hover {
+    opacity: 90%; }
+
+.header__manifiesto {
+  top: 0;
+  background-image: url(../imagenes/manifiesto/manifiesto-header.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute; }
+
+.manifiesto__lista {
+  margin: 30px;
+  background-color: transparent; }
+  .manifiesto__lista .manifiesto__items {
+    padding: 50px;
+    height: 400px; }
+  .manifiesto__lista h3 {
+    font-weight: bold;
+    font-size: 4rem; }
+  .manifiesto__lista .manifiesto__items:hover {
+    background-color: yellow; }
+
+.header__servicios {
+  top: 0;
+  background-image: url(../imagenes/servicios/servicios-header.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute; }
+
+.contacto {
+  padding: 0 0 100px 200px; }
+  .contacto .formulario {
+    background-color: #e6e6e6;
+    width: 600px;
+    height: 450px; }
+  .contacto .contacto__titulo {
+    font-weight: bold; }
+
+.header__proyectos__almag {
+  top: 0;
+  background-image: url(../imagenes/proyectos/almag/almag-header.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute; }
+
+.header__proyectos__faino {
+  top: 0;
+  background-image: url(../imagenes/proyectos/faino/faino-header.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute; }
+
+.header__proyectos__solucer {
+  top: 0;
+  background-image: url(../imagenes/proyectos/solucer/solucer-header.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: absolute; }
+
+.galeria__proyectos {
+  padding-bottom: 100px; }
